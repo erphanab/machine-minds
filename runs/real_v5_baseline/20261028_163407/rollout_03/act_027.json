@@ -1,0 +1,226 @@
+{
+ "act": 27,
+ "joints": [
+  65.76799774169922,
+  41.87799835205078,
+  62.185001373291016,
+  0.0,
+  -110.30699920654297,
+  79.1510009765625,
+  0.0
+ ],
+ "tcp_pose": [
+  180.014,
+  399.952,
+  19.989,
+  180.0,
+  0.0,
+  144.919
+ ],
+ "tip_base": [
+  0.18001428665796437,
+  0.3999523390303527,
+  0.34998917694733206
+ ],
+ "detections": [
+  {
+   "class": "bin",
+   "conf": 0.9495128393173218,
+   "xy_robot_m": [
+    0.45301245692501596,
+    -0.1911770733235292
+   ],
+   "yaw_deg": 0.8616310124077721,
+   "fit_iou": 0.9488,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.9074026346206665,
+   "xy_robot_m": [
+    0.33368447891180014,
+    -0.1798456674002886
+   ],
+   "yaw_deg": -2.502549769199616,
+   "fit_iou": 0.9604,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "cap",
+   "conf": 0.8969821929931641,
+   "xy_robot_m": [
+    0.4726899531741547,
+    0.2650144831289888
+   ],
+   "yaw_deg": null,
+   "fit_iou": 0.9497,
+   "eligible": false,
+   "skip_reason": "distractor",
+   "colour": null
+  },
+  {
+   "class": "bin",
+   "conf": 0.875292956829071,
+   "xy_robot_m": [
+    0.20859063348661527,
+    -0.17721968450827136
+   ],
+   "yaw_deg": -5.22527224429995,
+   "fit_iou": 0.9112,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8698495626449585,
+   "xy_robot_m": [
+    0.2945617634693876,
+    -0.006829125492474584
+   ],
+   "yaw_deg": 27.407271995698306,
+   "fit_iou": 0.4909,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "yellow"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8645380139350891,
+   "xy_robot_m": [
+    0.3475500333104531,
+    0.18545181343126002
+   ],
+   "yaw_deg": 21.782188367586254,
+   "fit_iou": 0.469,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "red"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8535317182540894,
+   "xy_robot_m": [
+    0.3813430427618922,
+    0.0739937993785046
+   ],
+   "yaw_deg": 36.40597480353217,
+   "fit_iou": 0.567,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "blue"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8479433655738831,
+   "xy_robot_m": [
+    0.39968243856650365,
+    -0.018830478158556225
+   ],
+   "yaw_deg": 37.624453685715714,
+   "fit_iou": 0.638,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "red"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8100367188453674,
+   "xy_robot_m": [
+    0.2765563238256743,
+    0.0906701545480308
+   ],
+   "yaw_deg": 25.53682094219005,
+   "fit_iou": 0.465,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "yellow"
+  }
+ ],
+ "bins": {
+  "bin_1": {
+   "xy": [
+    0.20859063348661527,
+    -0.17721968450827136
+   ],
+   "yaw_deg": 84.77472775570006,
+   "found": true,
+   "holds": [
+    "cube"
+   ]
+  },
+  "bin_2": {
+   "xy": [
+    0.33368447891180014,
+    -0.1798456674002886
+   ],
+   "yaw_deg": 87.49745023080038,
+   "found": true,
+   "holds": [
+    "aaa_cell"
+   ]
+  },
+  "bin_3": {
+   "xy": [
+    0.45301245692501596,
+    -0.1911770733235292
+   ],
+   "yaw_deg": 0.8616310124077721,
+   "found": true,
+   "holds": [
+    "screw"
+   ]
+  }
+ },
+ "skipped": [
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "cap",
+   "distractor"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ]
+ ],
+ "tracker": {
+  "new": [],
+  "moved": [],
+  "vanished": [],
+  "order": []
+ },
+ "decision": "hold",
+ "reason": "nothing left to pick",
+ "seconds": 2.83
+}

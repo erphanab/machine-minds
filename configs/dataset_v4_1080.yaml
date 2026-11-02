@@ -1,0 +1,15 @@
+# v4 at 1080p: tangerine bins. data/synth_v4 (bins anywhere in reach) + data/synth_v4_stress (a bin against
+# the yellow edge tape and one against the robot base), randomized lighting and bin gloss; ROI crops
+# (masks_to_yolo) halved to the 1080p camera (mm.datagen.downscale_yolo). `path` is relative to the repo root.
+# Class ids and names must match configs/classes.yaml.
+path: ../v5/data/yolo_v4_1080
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: cube
+  1: cap
+  2: aaa_cell
+  3: tube
+  4: screw
+  5: bin

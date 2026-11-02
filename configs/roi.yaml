@@ -1,0 +1,11 @@
+# Fixed table-camera crop for YOLO training and inference (A4/A7).
+# Pixel box in the full table image at `resolution`; roi_for() scales it.
+# v3: covers targets, tube overhang and every bin pose of the B8 region
+# (randomize.bin_pose_ok). Regenerate: masks_to_yolo.py --write-roi.
+resolution:
+- 3840
+- 2160
+x0: 689
+y0: 256
+width: 2560
+height: 1824

@@ -1,0 +1,374 @@
+{
+ "act": 12,
+ "joints": [
+  65.75700378417969,
+  41.81700134277344,
+  62.07699966430664,
+  0.0,
+  -110.26000213623047,
+  -122.15899658203125,
+  0.0
+ ],
+ "tcp_pose": [
+  180.046,
+  399.82,
+  19.956,
+  -180.0,
+  0.0,
+  -56.402
+ ],
+ "tip_base": [
+  0.18004653132825602,
+  0.3998189825179226,
+  0.3499563702844441
+ ],
+ "previous_pick": {
+  "track": "T2",
+  "category": "aaa_cell",
+  "xy": [
+   0.2936362554590385,
+   -0.011876815570913211
+  ],
+  "bin": "aaa_cell",
+  "attempt": 1,
+  "verdict": "picked"
+ },
+ "detections": [
+  {
+   "class": "bin",
+   "conf": 0.9546145796775818,
+   "xy_robot_m": [
+    0.2736715658810202,
+    0.4826080952514891
+   ],
+   "yaw_deg": 44.79625835270488,
+   "fit_iou": 0.9515,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.9423946142196655,
+   "xy_robot_m": [
+    0.5546125381467026,
+    -0.041243483737435443
+   ],
+   "yaw_deg": 42.99368905724243,
+   "fit_iou": 0.9411,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.933108389377594,
+   "xy_robot_m": [
+    0.3173805501562803,
+    -0.13354883009103224
+   ],
+   "yaw_deg": -26.505598284184444,
+   "fit_iou": 0.9787,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "cap",
+   "conf": 0.9132081866264343,
+   "xy_robot_m": [
+    0.30228510582167023,
+    0.14625464038849953
+   ],
+   "yaw_deg": null,
+   "fit_iou": 0.9432,
+   "eligible": false,
+   "skip_reason": "distractor",
+   "colour": null
+  },
+  {
+   "class": "cube",
+   "conf": 0.8756717443466187,
+   "xy_robot_m": [
+    0.2874401723266865,
+    0.2411159138397543
+   ],
+   "yaw_deg": 5.908742718950494,
+   "fit_iou": 0.5386,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "red"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8717607259750366,
+   "xy_robot_m": [
+    0.2092607249289854,
+    0.2939321584691627
+   ],
+   "yaw_deg": 3.4910990229054852,
+   "fit_iou": 0.4918,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "yellow"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8692016005516052,
+   "xy_robot_m": [
+    0.21125276594950726,
+    0.1571490993258751
+   ],
+   "yaw_deg": 19.37721434426158,
+   "fit_iou": 0.5313,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "blue"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8620253205299377,
+   "xy_robot_m": [
+    0.42697951886926305,
+    0.008999673282733898
+   ],
+   "yaw_deg": 32.424178172896475,
+   "fit_iou": 0.6938,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "red"
+  },
+  {
+   "class": "aaa_cell",
+   "conf": 0.8597192168235779,
+   "xy_robot_m": [
+    0.3828160503053957,
+    0.08481459242905022
+   ],
+   "yaw_deg": 81.67334375360919,
+   "fit_iou": 0.9293,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": null
+  },
+  {
+   "class": "cube",
+   "conf": 0.8563334345817566,
+   "xy_robot_m": [
+    0.43487424382407186,
+    0.1880651935169647
+   ],
+   "yaw_deg": 2.31981953136576,
+   "fit_iou": 0.6555,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "blue"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8509714603424072,
+   "xy_robot_m": [
+    0.3563358190924971,
+    0.20427588473027264
+   ],
+   "yaw_deg": 6.856103659360802,
+   "fit_iou": 0.4748,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "yellow"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8492034077644348,
+   "xy_robot_m": [
+    0.2428650556659668,
+    0.26288470473234565
+   ],
+   "yaw_deg": 28.210735325392307,
+   "fit_iou": 0.6797,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "blue"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8479505777359009,
+   "xy_robot_m": [
+    0.28399674882393955,
+    0.07436978412781896
+   ],
+   "yaw_deg": 37.447730353756015,
+   "fit_iou": 0.4198,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": "blue"
+  },
+  {
+   "class": "screw",
+   "conf": 0.8406096696853638,
+   "xy_robot_m": [
+    0.18963115214999363,
+    0.04900730196270491
+   ],
+   "yaw_deg": 67.20841033462311,
+   "fit_iou": 0.7489,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": null
+  },
+  {
+   "class": "screw",
+   "conf": 0.8328665494918823,
+   "xy_robot_m": [
+    0.4588933465439887,
+    0.09324665167358347
+   ],
+   "yaw_deg": -121.36921478270793,
+   "fit_iou": 0.7697,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": null
+  },
+  {
+   "class": "screw",
+   "conf": 0.732549250125885,
+   "xy_robot_m": [
+    0.2585915204003378,
+    0.11277724384641623
+   ],
+   "yaw_deg": -71.3969920454011,
+   "fit_iou": 0.4465,
+   "eligible": false,
+   "skip_reason": "pose_fit_below_gate",
+   "colour": null
+  }
+ ],
+ "bins": {
+  "bin_1": {
+   "xy": [
+    0.2736715658810202,
+    0.4826080952514891
+   ],
+   "yaw_deg": 44.79625835270488,
+   "found": true,
+   "holds": [
+    "cube"
+   ]
+  },
+  "bin_2": {
+   "xy": [
+    0.3173805501562803,
+    -0.13354883009103224
+   ],
+   "yaw_deg": 63.494401715815556,
+   "found": true,
+   "holds": [
+    "aaa_cell"
+   ]
+  },
+  "bin_3": {
+   "xy": [
+    0.5546125381467026,
+    -0.041243483737435443
+   ],
+   "yaw_deg": 42.99368905724243,
+   "found": true,
+   "holds": [
+    "screw"
+   ]
+  }
+ },
+ "skipped": [
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "cap",
+   "distractor"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "cube",
+   "pose_fit_below_gate"
+  ],
+  [
+   "screw",
+   "pose_fit_below_gate"
+  ],
+  [
+   "screw",
+   "pose_fit_below_gate"
+  ],
+  [
+   "screw",
+   "pose_fit_below_gate"
+  ]
+ ],
+ "tracker": {
+  "new": [],
+  "moved": [],
+  "vanished": [],
+  "order": [
+   "T3"
+  ]
+ },
+ "decision": "pick",
+ "pick": {
+  "track": "T3",
+  "category": "aaa_cell",
+  "xy": [
+   0.3828160503053957,
+   0.08481459242905022
+  ],
+  "bin": "aaa_cell",
+  "attempt": 1
+ },
+ "route": {
+  "pick": "direct",
+  "place": "direct",
+  "failures": []
+ },
+ "rows": 98,
+ "moves": [
+  98,
+  93,
+  122
+ ],
+ "seconds": 14.83
+}

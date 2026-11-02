@@ -1,0 +1,181 @@
+{
+ "act": 13,
+ "joints": [
+  -64.63500213623047,
+  34.55099868774414,
+  49.926998138427734,
+  0.0,
+  -105.3759994506836,
+  -250.3350067138672,
+  0.0
+ ],
+ "tcp_pose": [
+  180.68,
+  -381.112,
+  17.321,
+  -180.0,
+  0.0,
+  45.03
+ ],
+ "tip_base": [
+  0.18068053032662126,
+  -0.3811130152511576,
+  0.3473199261734498
+ ],
+ "detections": [
+  {
+   "class": "bin",
+   "conf": 0.9581249356269836,
+   "xy_robot_m": [
+    0.2129204776263349,
+    -0.4338064718043453
+   ],
+   "yaw_deg": 26.94192145381421,
+   "fit_iou": 0.9572,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.9447970390319824,
+   "xy_robot_m": [
+    0.4226739875799672,
+    -0.24517743652066168
+   ],
+   "yaw_deg": -27.10497847686184,
+   "fit_iou": 0.9625,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.944320023059845,
+   "xy_robot_m": [
+    0.3349357359268518,
+    0.254269071415163
+   ],
+   "yaw_deg": 0.5791229420107995,
+   "fit_iou": 0.9526,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "aaa_cell",
+   "conf": 0.882896900177002,
+   "xy_robot_m": [
+    0.36493877168364913,
+    0.055174872740675424
+   ],
+   "yaw_deg": -118.5226647295635,
+   "fit_iou": 0.8942,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": null
+  },
+  {
+   "class": "cube",
+   "conf": 0.8416599631309509,
+   "xy_robot_m": [
+    0.2335448506942862,
+    -0.25806237252797043
+   ],
+   "yaw_deg": 9.815414428710938,
+   "fit_iou": null,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": "red"
+  }
+ ],
+ "bins": {
+  "bin_1": {
+   "xy": [
+    0.2129204776263349,
+    -0.4338064718043453
+   ],
+   "yaw_deg": 26.94192145381421,
+   "found": true,
+   "holds": [
+    "screw"
+   ]
+  },
+  "bin_2": {
+   "xy": [
+    0.3349357359268518,
+    0.254269071415163
+   ],
+   "yaw_deg": 0.5791229420107995,
+   "found": true,
+   "holds": [
+    "aaa_cell"
+   ]
+  },
+  "bin_3": {
+   "xy": [
+    0.4226739875799672,
+    -0.24517743652066168
+   ],
+   "yaw_deg": 62.895021523138155,
+   "found": true,
+   "holds": [
+    "cube"
+   ]
+  }
+ },
+ "skipped": [
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ]
+ ],
+ "tracker": {
+  "new": [],
+  "moved": [],
+  "vanished": [],
+  "order": [
+   "T3",
+   "T1"
+  ]
+ },
+ "decision": "pick",
+ "pick": {
+  "track": "T3",
+  "category": "cube",
+  "xy": [
+   0.2335448506942862,
+   -0.25806237252797043
+  ],
+  "bin": "cube",
+  "attempt": 1
+ },
+ "route": {
+  "pick": "direct",
+  "place": "direct",
+  "failures": []
+ },
+ "rows": 46,
+ "moves": [
+  46,
+  25,
+  30,
+  60,
+  79
+ ],
+ "wrist_check": true,
+ "clear_pose": [
+  0.18,
+  -0.38,
+  0.35
+ ],
+ "seconds": 3.0
+}

@@ -1,0 +1,20 @@
+# Python bytecode caches
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets: environment files and the organizers' client request files
+.env
+.env.*
+.request*.json
+*.request.json
+
+# Generated data (kept locally; see README "Data")
+data/
+frames*/
+gripper_shots/
+*.zip

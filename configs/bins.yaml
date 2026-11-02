@@ -1,0 +1,45 @@
+# Sort bins (B1, v3 2026-10-24; v4 2026-10-25): ONE design, ONE colour.
+#
+# design   the starter's large "vial" bin (scene_config SORT_BINS): 90 x 90 mm
+#          outside, 65 mm tall, 65 x 65 mm rounded pocket on a 15 mm floor.
+#          Printable STL from the same parameters: python -m mm.cad.sort_bin
+# release_z  fingertip height above the work surface when the jaws open.
+#
+# v4: the three bins are identical (tangerine yellow #FFC72C, material
+# bin_tangerine), so they have no class of their own. Perception finds them
+# (YOLO "bin"); at a rollout's first capture with all three in view the robot
+# assigns cube / screw / aaa_cell to them by shortest planned travel
+# (mm/planning/bin_assign.py) and then tracks each bin by position
+# (mm/perception/bins.py). bin_1..3 are only names for positions.
+#
+# Per bin:
+# colour, mat  print colour and twin material (all the same).
+# xy, yaw_deg  FIXED placement (closed loop "config" mode, real-arm evaluation):
+#          a row clear of the object area, reachable, in the camera crop.
+#          PLACEHOLDERS until the real cell is measured. B8 places them at
+#          random (randomize.py, bin_mode="random").
+
+design:
+  outer: [0.090, 0.090]
+  pocket: 0.065
+  pocket_r: 0.012
+  wall_h: 0.065
+  floor_t: 0.015
+  release_z: 0.095
+
+bins:
+  bin_1:
+    colour: tangerine
+    mat: bin_tangerine
+    xy: [0.20, -0.24]
+    yaw_deg: 0.0
+  bin_2:
+    colour: tangerine
+    mat: bin_tangerine
+    xy: [0.32, -0.24]
+    yaw_deg: 0.0
+  bin_3:
+    colour: tangerine
+    mat: bin_tangerine
+    xy: [0.44, -0.24]
+    yaw_deg: 0.0

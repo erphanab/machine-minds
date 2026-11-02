@@ -1,0 +1,859 @@
+{
+ "counts": {
+  "v5": {
+   "cube": {
+    "detected": 705,
+    "pick": 2,
+    "skips": {
+     "pose_fit_below_gate": 694,
+     "low_confidence": 9
+    }
+   },
+   "screw": {
+    "detected": 165,
+    "pick": 0,
+    "skips": {
+     "pose_fit_below_gate": 163,
+     "low_confidence": 2
+    }
+   },
+   "aaa_cell": {
+    "detected": 39,
+    "pick": 34,
+    "skips": {
+     "fewer_than_3_bins": 2,
+     "low_confidence": 2,
+     "pose_fit_below_gate": 1
+    }
+   },
+   "cap": {
+    "detected": 122,
+    "pick": 0,
+    "skips": {
+     "distractor": 122
+    }
+   }
+  },
+  "v6": {
+   "cube": {
+    "detected": 705,
+    "pick": 676,
+    "skips": {
+     "fewer_than_3_bins": 20,
+     "low_confidence": 9
+    }
+   },
+   "screw": {
+    "detected": 165,
+    "pick": 131,
+    "skips": {
+     "fewer_than_3_bins": 10,
+     "low_confidence": 2,
+     "ik_unreachable": 22
+    }
+   },
+   "aaa_cell": {
+    "detected": 39,
+    "pick": 26,
+    "skips": {
+     "ik_unreachable": 8,
+     "fewer_than_3_bins": 2,
+     "low_confidence": 2,
+     "pose_fit_below_gate": 1
+    }
+   },
+   "cap": {
+    "detected": 122,
+    "pick": 0,
+    "skips": {
+     "distractor": 122
+    }
+   }
+  }
+ },
+ "aaa": {
+  "same_pose_and_gate": 39,
+  "different": [],
+  "status_v5_v6": [
+   34,
+   26
+  ]
+ },
+ "outline_quality": {
+  "cube": {
+   "n": 705,
+   "ratio_median": 1.15,
+   "ratio_p10_p90": [
+    1.03,
+    1.43
+   ],
+   "loose_ratio_ge_1.25": 212,
+   "tight_ratio_le_0.8": 14,
+   "iou_median": 0.85,
+   "offset_px_median": 0.5,
+   "offset_gt_3px": 19,
+   "side_px_median": 20.0,
+   "mask_px_median": 402,
+   "own_px_median": 306,
+   "rect_mm_median": [
+    17.5,
+    22.2
+   ]
+  },
+  "screw": {
+   "n": 165,
+   "ratio_median": 1.26,
+   "ratio_p10_p90": [
+    1.19,
+    1.34
+   ],
+   "loose_ratio_ge_1.25": 96,
+   "tight_ratio_le_0.8": 0,
+   "iou_median": 0.77,
+   "offset_px_median": 0.6,
+   "offset_gt_3px": 0,
+   "side_px_median": 15.8,
+   "mask_px_median": 250,
+   "own_px_median": 201,
+   "length_mm_median": 28.4,
+   "shank_mm_median": 6.3,
+   "head_mm_median": 10.6,
+   "head_end": {
+    "-axis": 102,
+    "unclear": 6,
+    "+axis": 57
+   }
+  }
+ },
+ "suspects": [
+  {
+   "file": "rollout_03/act_023_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "centre 8.3 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_03/act_039_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.5x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_03/act_056_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "centre 5.1 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_03/act_059_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "screw head not found"
+   ]
+  },
+  {
+   "file": "rollout_03/act_060_table.jpg",
+   "class": "cube",
+   "status": "fewer_than_3_bins",
+   "why": [
+    "centre 3.3 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_005_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "centre 5.2 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_005_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 5.3 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_006_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "screw head not found"
+   ]
+  },
+  {
+   "file": "rollout_04/act_006_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.59x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_006_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.52x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_006_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 4.8 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_011_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.54x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_011_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "centre 5.0 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_011_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 5.4 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_016_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.71x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_016_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 4.5 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_016_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 3.4 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_017_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "centre 5.1 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_017_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "centre 5.8 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_018_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.53x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_018_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "centre 5.2 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_018_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 5.5 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_019_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.59x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_019_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "touching another object",
+    "centre 5.2 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_020_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.59x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_020_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "centre 5.5 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_021_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.66x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_022_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.58x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_023_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.57x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_023_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.55x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_024_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.5x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_024_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.65x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_025_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.52x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_025_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.5x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_026_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.55x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_027_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.7x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_028_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.8x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_028_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.55x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_04/act_030_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.62x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_05/act_002_table.jpg",
+   "class": "screw",
+   "status": "ik_unreachable",
+   "why": [
+    "outline 1.6x the object's pixels",
+    "screw head not found"
+   ]
+  },
+  {
+   "file": "rollout_05/act_007_table.jpg",
+   "class": "screw",
+   "status": "ik_unreachable",
+   "why": [
+    "outline 1.64x the object's pixels",
+    "screw head not found"
+   ]
+  },
+  {
+   "file": "rollout_05/act_012_table.jpg",
+   "class": "screw",
+   "status": "ik_unreachable",
+   "why": [
+    "outline 1.61x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_05/act_016_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.53x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_05/act_016_table.jpg",
+   "class": "screw",
+   "status": "ik_unreachable",
+   "why": [
+    "outline 1.64x the object's pixels",
+    "screw head not found"
+   ]
+  },
+  {
+   "file": "rollout_05/act_017_table.jpg",
+   "class": "screw",
+   "status": "ik_unreachable",
+   "why": [
+    "outline 1.61x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_05/act_018_table.jpg",
+   "class": "screw",
+   "status": "ik_unreachable",
+   "why": [
+    "outline 1.62x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_05/act_022_table.jpg",
+   "class": "cube",
+   "status": "low_confidence",
+   "why": [
+    "outline 1.73x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_05/act_032_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object",
+    "screw head not found"
+   ]
+  },
+  {
+   "file": "rollout_05/act_032_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.55x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_06/act_002_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_007_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_007_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.51x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_06/act_007_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_008_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.54x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_06/act_008_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_008_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_009_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_009_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_010_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_010_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_011_table.jpg",
+   "class": "screw",
+   "status": "fewer_than_3_bins",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_06/act_014_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.51x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_06/act_014_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.5x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_07/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.5x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_08/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 7.64x the object's pixels",
+    "centre 6.6 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_08/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_08/act_002_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_08/act_007_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 7.05x the object's pixels",
+    "centre 4.9 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_08/act_007_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_08/act_007_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_002_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 12.36x the object's pixels",
+    "centre 5.5 px off the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_09/act_002_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_007_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.56x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_09/act_007_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_007_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_008_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.58x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_09/act_008_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_008_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_009_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_009_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "outline 1.53x the object's pixels"
+   ]
+  },
+  {
+   "file": "rollout_09/act_009_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_010_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_010_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_011_table.jpg",
+   "class": "cube",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  },
+  {
+   "file": "rollout_09/act_011_table.jpg",
+   "class": "screw",
+   "status": "pick",
+   "why": [
+    "touching another object"
+   ]
+  }
+ ],
+ "seconds_per_image": {
+  "v5": 8.67,
+  "v6": 2.92
+ },
+ "images": 128
+}

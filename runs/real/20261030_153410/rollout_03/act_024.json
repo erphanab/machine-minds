@@ -1,0 +1,153 @@
+{
+ "act": 24,
+ "joints": [
+  65.66000366210938,
+  41.606998443603516,
+  61.63800048828125,
+  0.0,
+  -110.03099822998047,
+  -162.7469940185547,
+  0.0
+ ],
+ "tcp_pose": [
+  180.628,
+  399.299,
+  19.527,
+  180.0,
+  0.0,
+  -97.087
+ ],
+ "tip_base": [
+  0.18062542696888118,
+  0.39929755439490466,
+  0.34952984489073863
+ ],
+ "previous_pick": {
+  "track": "T1",
+  "category": "aaa_cell",
+  "xy": [
+   0.32751446596379113,
+   0.02875656697661549
+  ],
+  "bin": "aaa_cell",
+  "attempt": 1,
+  "verdict": "picked"
+ },
+ "detections": [
+  {
+   "class": "bin",
+   "conf": 0.9469929933547974,
+   "xy_robot_m": [
+    0.2128867621357826,
+    -0.4323552905324643
+   ],
+   "yaw_deg": 12.60043784339701,
+   "fit_iou": 0.9636,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.940527617931366,
+   "xy_robot_m": [
+    0.42533029801596617,
+    -0.24378294289315455
+   ],
+   "yaw_deg": -27.575471044668518,
+   "fit_iou": 0.9419,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.9269488453865051,
+   "xy_robot_m": [
+    0.3538380386343824,
+    0.20650594239213538
+   ],
+   "yaw_deg": 1.7412734936895098,
+   "fit_iou": 0.9645,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "cap",
+   "conf": 0.913424551486969,
+   "xy_robot_m": [
+    0.36700704451918664,
+    -0.1024234927444503
+   ],
+   "yaw_deg": null,
+   "fit_iou": 0.9464,
+   "eligible": false,
+   "skip_reason": "distractor",
+   "colour": null
+  }
+ ],
+ "bins": {
+  "bin_1": {
+   "xy": [
+    0.2128867621357826,
+    -0.4323552905324643
+   ],
+   "yaw_deg": 12.60043784339701,
+   "found": true,
+   "holds": [
+    "screw"
+   ]
+  },
+  "bin_2": {
+   "xy": [
+    0.3538380386343824,
+    0.20650594239213538
+   ],
+   "yaw_deg": 1.7412734936895098,
+   "found": true,
+   "holds": [
+    "aaa_cell"
+   ]
+  },
+  "bin_3": {
+   "xy": [
+    0.42533029801596617,
+    -0.24378294289315455
+   ],
+   "yaw_deg": 62.42452895533148,
+   "found": true,
+   "holds": [
+    "cube"
+   ]
+  }
+ },
+ "skipped": [
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "cap",
+   "distractor"
+  ]
+ ],
+ "tracker": {
+  "new": [],
+  "moved": [],
+  "vanished": [],
+  "order": []
+ },
+ "decision": "hold",
+ "reason": "nothing left to pick",
+ "idle": 1,
+ "seconds": 2.09
+}

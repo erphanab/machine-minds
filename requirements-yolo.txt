@@ -1,0 +1,9 @@
+# YOLO environment (training, perceive_yolo.py, eval_perception.py).
+# Install CUDA PyTorch first, for your platform:
+#   Windows/Linux x86 + RTX 50xx:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+#   DGX Spark (ARM64):             use the NVIDIA PyTorch container instead
+# then: pip install -r requirements-yolo.txt
+# Pin Ultralytics to the same version on every machine (guide, step A5).
+ultralytics==8.4.183
+scipy>=1.14
+pyyaml>=6.0

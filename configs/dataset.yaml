@@ -1,0 +1,19 @@
+# Ultralytics YOLO-seg dataset (A4 output). `path` is relative to the repo root;
+# mm/perception/train_yolo.py resolves it to an absolute path before training,
+# because Ultralytics would otherwise resolve it against its own datasets dir.
+# Class ids and names must match configs/classes.yaml.
+# v3 (2026-10-24): AAA cells (id 2, was AA), bins detected as a class (id 5),
+#     bins at random poses, one bin design; larger crop (B8 bin region).
+# v2 (data/yolo_v2, models/yolo_seg_v2): screws (id 4), caps distractors.
+# v1 (data/yolo, models/yolo_seg_v1): classes 0-3, no bins.
+path: ../v5/data/yolo_v3
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: cube
+  1: cap
+  2: aaa_cell
+  3: tube
+  4: screw
+  5: bin

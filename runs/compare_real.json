@@ -1,0 +1,229 @@
+{
+ "old": {
+  "weights": "C:\\Users\\ebhuiyan\\Desktop\\Hackathon\\v5\\models\\yolo_seg_v4_1080\\weights\\best.pt",
+  "real": {
+   "conf_0.5": {
+    "cube": {
+     "labels": 193,
+     "tp": 2,
+     "fp": 0,
+     "recall": 0.01,
+     "precision": 1.0
+    },
+    "cap": {
+     "labels": 22,
+     "tp": 22,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "aaa_cell": {
+     "labels": 62,
+     "tp": 0,
+     "fp": 0,
+     "recall": 0.0,
+     "precision": null
+    },
+    "tube": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "screw": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "bin": {
+     "labels": 216,
+     "tp": 216,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "targets": {
+     "labels": 255,
+     "tp": 2,
+     "fp": 0,
+     "recall": 0.008,
+     "precision": 1.0
+    }
+   },
+   "conf_0.25": {
+    "cube": {
+     "labels": 193,
+     "tp": 4,
+     "fp": 0,
+     "recall": 0.021,
+     "precision": 1.0
+    },
+    "cap": {
+     "labels": 22,
+     "tp": 22,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "aaa_cell": {
+     "labels": 62,
+     "tp": 0,
+     "fp": 0,
+     "recall": 0.0,
+     "precision": null
+    },
+    "tube": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "screw": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 1,
+     "recall": null,
+     "precision": 0.0
+    },
+    "bin": {
+     "labels": 216,
+     "tp": 216,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "targets": {
+     "labels": 255,
+     "tp": 4,
+     "fp": 1,
+     "recall": 0.016,
+     "precision": 0.8
+    }
+   }
+  },
+  "sim_test_mask_map50": 0.995
+ },
+ "new": {
+  "weights": "C:\\Users\\ebhuiyan\\Desktop\\Hackathon\\v5\\models\\yolo_seg_v5_real_1080\\weights\\best.pt",
+  "real": {
+   "conf_0.5": {
+    "cube": {
+     "labels": 193,
+     "tp": 193,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "cap": {
+     "labels": 22,
+     "tp": 22,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "aaa_cell": {
+     "labels": 62,
+     "tp": 5,
+     "fp": 69,
+     "recall": 0.081,
+     "precision": 0.068
+    },
+    "tube": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "screw": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "bin": {
+     "labels": 216,
+     "tp": 215,
+     "fp": 0,
+     "recall": 0.995,
+     "precision": 1.0
+    },
+    "targets": {
+     "labels": 255,
+     "tp": 198,
+     "fp": 69,
+     "recall": 0.776,
+     "precision": 0.742
+    }
+   },
+   "conf_0.25": {
+    "cube": {
+     "labels": 193,
+     "tp": 193,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "cap": {
+     "labels": 22,
+     "tp": 22,
+     "fp": 0,
+     "recall": 1.0,
+     "precision": 1.0
+    },
+    "aaa_cell": {
+     "labels": 62,
+     "tp": 5,
+     "fp": 73,
+     "recall": 0.081,
+     "precision": 0.064
+    },
+    "tube": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "screw": {
+     "labels": 0,
+     "tp": 0,
+     "fp": 0,
+     "recall": null,
+     "precision": null
+    },
+    "bin": {
+     "labels": 216,
+     "tp": 215,
+     "fp": 0,
+     "recall": 0.995,
+     "precision": 1.0
+    },
+    "targets": {
+     "labels": 255,
+     "tp": 198,
+     "fp": 73,
+     "recall": 0.776,
+     "precision": 0.731
+    }
+   }
+  },
+  "sim_test_mask_map50": 0.995
+ },
+ "images": 79,
+ "verdict": {
+  "clearly_better": false,
+  "checks": {
+   "targets recall +>= 0.10": true,
+   "no target class recall -> 0.05": true,
+   "targets precision ->= -0.05": false,
+   "bin recall ->= -0.02": true,
+   "sim test mAP50 ->= -0.02": true
+  }
+ }
+}

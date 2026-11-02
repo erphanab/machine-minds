@@ -1,0 +1,149 @@
+[
+  {
+    "seed": 1,
+    "targets": 5,
+    "sorted": 5,
+    "success": true,
+    "distractor_moved_mm": {
+      "SortCap0": 0.0
+    },
+    "fault": null,
+    "acts": 31,
+    "picks": {
+      "attempts": 5,
+      "picked": 5,
+      "missed": 0,
+      "retries": 0,
+      "aborted": 0,
+      "waits": 0,
+      "arm_speed": 0.05,
+      "arm_seconds": 302.8
+    },
+    "table_moves_mm": {
+      "SortCap0": 0.0,
+      "SortCube0": 0.0,
+      "SortAAACell0": 0.0,
+      "SortAAACell1": 0.0,
+      "Screw0": 0.0,
+      "Screw1": 0.0
+    },
+    "minutes": 2.2
+  },
+  {
+    "seed": 2,
+    "targets": 4,
+    "sorted": 4,
+    "success": true,
+    "distractor_moved_mm": {
+      "SortCap0": 0.0
+    },
+    "fault": null,
+    "acts": 27,
+    "picks": {
+      "attempts": 4,
+      "picked": 4,
+      "missed": 0,
+      "retries": 0,
+      "aborted": 0,
+      "waits": 0,
+      "arm_speed": 0.05,
+      "arm_seconds": 265.2
+    },
+    "table_moves_mm": {
+      "SortCap0": 0.0,
+      "SortCube0": 0.0,
+      "SortCube1": 0.0,
+      "SortAAACell0": 0.0,
+      "Screw0": 0.0
+    },
+    "minutes": 1.8
+  },
+  {
+    "seed": 3,
+    "targets": 4,
+    "sorted": 4,
+    "success": true,
+    "distractor_moved_mm": {
+      "SortVial0": 0.0
+    },
+    "fault": null,
+    "acts": 27,
+    "picks": {
+      "attempts": 4,
+      "picked": 4,
+      "missed": 0,
+      "retries": 0,
+      "aborted": 0,
+      "waits": 0,
+      "arm_speed": 0.05,
+      "arm_seconds": 255.2
+    },
+    "table_moves_mm": {
+      "SortVial0": 0.0,
+      "SortCube0": 0.0,
+      "SortAAACell0": 0.0,
+      "SortAAACell1": 0.0,
+      "Screw0": 0.0
+    },
+    "minutes": 1.8
+  },
+  {
+    "seed": 4,
+    "targets": 5,
+    "sorted": 5,
+    "success": true,
+    "distractor_moved_mm": {
+      "SortCap0": 0.0
+    },
+    "fault": null,
+    "acts": 32,
+    "picks": {
+      "attempts": 5,
+      "picked": 5,
+      "missed": 0,
+      "retries": 0,
+      "aborted": 0,
+      "waits": 0,
+      "arm_speed": 0.05,
+      "arm_seconds": 311.8
+    },
+    "table_moves_mm": {
+      "SortCap0": 0.0,
+      "SortCube0": 0.0,
+      "SortAAACell0": 0.0,
+      "SortAAACell1": 0.0,
+      "Screw0": 0.0,
+      "Screw1": 0.0
+    },
+    "minutes": 2.2
+  },
+  {
+    "seed": 5,
+    "targets": 4,
+    "sorted": 4,
+    "success": true,
+    "distractor_moved_mm": {
+      "SortCap0": 0.0
+    },
+    "fault": null,
+    "acts": 27,
+    "picks": {
+      "attempts": 4,
+      "picked": 4,
+      "missed": 0,
+      "retries": 0,
+      "aborted": 0,
+      "waits": 0,
+      "arm_speed": 0.05,
+      "arm_seconds": 263.2
+    },
+    "table_moves_mm": {
+      "SortCap0": 0.0,
+      "SortCube0": 0.0,
+      "SortAAACell0": 0.0,
+      "Screw0": 0.0,
+      "Screw1": 0.0
+    },
+    "minutes": 1.9
+  }
+]

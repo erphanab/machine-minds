@@ -1,0 +1,59 @@
+# Machine Minds class list (v3, 2026-10-24).
+#
+# Targets: cube, screw, aaa_cell -- one bin each. Distractors: cap, tube.
+# bin: the sort bins themselves (one shared design, configs/bins.yaml); found
+# at every capture so they can be anywhere on the table (B8).
+#
+# History: caps were a target until 2026-10-23 (their 20.8-23.6 mm plug does
+# not fit the 16 mm fingertip gap; screws replaced them). Id 2 was the AA cell
+# until v3; AAA cells replaced AA cells (AA: 0.75 mm clearance per side, lost
+# 3/7 rendered picks; AAA: 2.75 mm, 25/25).
+#
+# id        YOLO class index. Stable: never renumber, only append.
+# role      target -> sorted into `bin`; distractor -> detected, never picked;
+#           bin -> a destination, located at every capture.
+# bin       the class's bin slot in a plan's bins table. v4: the physical bins
+#           (configs/bins.yaml bin_1..3) are identical; the robot assigns one to
+#           each slot per rollout (mm/planning/bin_assign.py).
+# prim      prefix of the prims cell.py builds for this class, used by datagen
+#           to map instance masks to classes (labels only).
+# grip_validated
+#           true once a sim pick test passes for that class.
+
+classes:
+  - id: 0
+    name: cube
+    role: target
+    bin: cube
+    prim: SortCube
+    grip_validated: true    # starter v0.5: 6/6; B5 sim 2026-10-23: 26/26 into bin
+  - id: 1
+    name: cap
+    role: distractor
+    bin: null
+    prim: SortCap
+    grip_validated: false
+  - id: 2
+    name: aaa_cell
+    role: target
+    bin: aaa_cell
+    prim: SortAAACell
+    grip_validated: true    # 2026-10-23 sim: 18/18 physics-only, 7/7 rendered
+  - id: 3
+    name: tube
+    role: distractor
+    bin: null
+    prim: SortVial
+    grip_validated: false
+  - id: 4
+    name: screw
+    role: target
+    bin: screw
+    prim: Screw             # cell.add_screws builds /World/Screw<i>
+    grip_validated: true    # B5 sim, 2026-10-23: 31/31 picked and placed in bin (10 scenes)
+  - id: 5
+    name: bin
+    role: bin
+    bin: null
+    prim: Bin_              # cell.add_sort_bins builds /World/Bin_<name> (v4: bin_1..3)
+    grip_validated: false

@@ -1,0 +1,13 @@
+# v5: the v4 sim set + reviewed real-cell images (27 Oct 2026, 4 training rollouts x 4), ROI crops at 1080p.
+# val = sim val (picks best.pt); test = the 2 held-out real rollouts (evaluation only). Built by mm.datagen.build_real_finetune.
+path: ../v5/data/yolo_v5_real_1080
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: cube
+  1: cap
+  2: aaa_cell
+  3: tube
+  4: screw
+  5: bin

@@ -1,0 +1,99 @@
+{
+  "name": "yolo_seg_v5_real_1080",
+  "created": "2026-10-28T01:23:13",
+  "weights": "models/yolo_seg_v5_real_1080/weights/best.pt",
+  "base_model": "models/yolo_seg_v4_1080/weights/best.pt",
+  "classes": {
+    "0": "cube",
+    "1": "cap",
+    "2": "aaa_cell",
+    "3": "tube",
+    "4": "screw",
+    "5": "bin"
+  },
+  "dataset": {
+    "config": "configs/dataset_v5_real_1080.yaml",
+    "sha256": "9da4d08ca7403499ca08a92f5d42325f6463db665b7a9728788d2e58e118b6fe",
+    "counts": {
+      "train": 2012,
+      "val": 250,
+      "test": 79
+    }
+  },
+  "roi": {
+    "resolution": [
+      3840,
+      2160
+    ],
+    "x0": 689,
+    "y0": 256,
+    "width": 2560,
+    "height": 1824
+  },
+  "hyperparameters": {
+    "imgsz": 1280,
+    "epochs": 15,
+    "batch": 4,
+    "hsv_h": 0.0,
+    "hsv_s": 0.3,
+    "hsv_v": 0.4,
+    "degrees": 180,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "seed": 0,
+    "deterministic": true,
+    "fraction": 1.0,
+    "optimizer": "AdamW",
+    "lr0": 0.0005
+  },
+  "train_seconds": 1700,
+  "note": "v4_1080 fine-tuned on v4 sim + reviewed real-cell images (27 Oct, rollouts 02/03/04/06 x4, review round 1), 1080p ROI crops; infer at 1600",
+  "metrics": {
+    "val": {
+      "mask_map50": 0.9945568597421394,
+      "mask_map50_95": 0.7636925946981122,
+      "box_map50": 0.995,
+      "box_map50_95": 0.9374670950124753,
+      "mask_precision": 0.9971879449424516,
+      "mask_recall": 0.9959247773724549,
+      "per_class_mask_map50_95": {
+        "cube": 0.4535957985060205,
+        "cap": 0.811535742042339,
+        "aaa_cell": 0.7616450474666562,
+        "tube": 0.9178094277191567,
+        "screw": 0.6457696636101969,
+        "bin": 0.991799888844303
+      }
+    },
+    "test": {
+      "mask_map50": 0.8422963507768502,
+      "mask_map50_95": 0.6660121700398385,
+      "box_map50": 0.8188390608934858,
+      "box_map50_95": 0.6336770067373466,
+      "mask_precision": 0.7459801672161335,
+      "mask_recall": 0.9838709677419355,
+      "per_class_mask_map50_95": {
+        "cube": 0.5904978494055372,
+        "cap": 0.9072861842105263,
+        "aaa_cell": 0.23181115817119718,
+        "bin": 0.9344534883720931
+      }
+    }
+  },
+  "versions": {
+    "ultralytics": "8.4.183",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "python": "3.12.15"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "inference_imgsz": 1600,
+  "input_resolution": [
+    1920,
+    1080
+  ]
+}

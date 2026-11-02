@@ -1,0 +1,254 @@
+{
+ "act": 14,
+ "joints": [
+  -64.6259994506836,
+  34.387001037597656,
+  50.22200012207031,
+  0.0,
+  -105.83499908447266,
+  174.62600708007812,
+  0.0
+ ],
+ "tcp_pose": [
+  180.142,
+  -379.828,
+  19.935,
+  -180.0,
+  0.0,
+  110.0
+ ],
+ "tip_base": [
+  0.18014355080167482,
+  -0.37982616259251056,
+  0.34993557005621456
+ ],
+ "previous_pick": {
+  "track": "T4",
+  "category": "screw",
+  "xy": [
+   0.29880495743734614,
+   0.2555092411878134
+  ],
+  "bin": "screw",
+  "attempt": 1,
+  "verdict": "picked"
+ },
+ "detections": [
+  {
+   "class": "bin",
+   "conf": 0.9523327946662903,
+   "xy_robot_m": [
+    0.46264019885778945,
+    -0.036697851483754276
+   ],
+   "yaw_deg": -3.300333699232375,
+   "fit_iou": 0.9808,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.9503021836280823,
+   "xy_robot_m": [
+    0.42860144913897114,
+    -0.19208798370581784
+   ],
+   "yaw_deg": -3.397292960535588,
+   "fit_iou": 0.9745,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "bin",
+   "conf": 0.9488334655761719,
+   "xy_robot_m": [
+    0.29658933062407344,
+    -0.05373515438751969
+   ],
+   "yaw_deg": -0.6067093425510375,
+   "fit_iou": 0.959,
+   "eligible": false,
+   "skip_reason": "bin",
+   "colour": "yellow"
+  },
+  {
+   "class": "cap",
+   "conf": 0.9181519150733948,
+   "xy_robot_m": [
+    0.2104959682829565,
+    0.39091177195260784
+   ],
+   "yaw_deg": null,
+   "fit_iou": 0.908,
+   "eligible": false,
+   "skip_reason": "distractor",
+   "colour": null
+  },
+  {
+   "class": "aaa_cell",
+   "conf": 0.8733339905738831,
+   "xy_robot_m": [
+    0.4444732496002161,
+    0.13243199576656187
+   ],
+   "yaw_deg": -74.51755706984002,
+   "fit_iou": 0.8754,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": null
+  },
+  {
+   "class": "tube",
+   "conf": 0.8730850219726562,
+   "xy_robot_m": [
+    0.36389199142628914,
+    0.35612291065708607
+   ],
+   "yaw_deg": null,
+   "fit_iou": 0.0,
+   "eligible": false,
+   "skip_reason": "distractor",
+   "colour": null
+  },
+  {
+   "class": "aaa_cell",
+   "conf": 0.8688896298408508,
+   "xy_robot_m": [
+    0.26530078340492713,
+    -0.26318419731178155
+   ],
+   "yaw_deg": 146.90127932750744,
+   "fit_iou": 0.9314,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": null
+  },
+  {
+   "class": "cube",
+   "conf": 0.8531138300895691,
+   "xy_robot_m": [
+    0.21053701784629208,
+    -0.16033220561301104
+   ],
+   "yaw_deg": 5.716300964355469,
+   "fit_iou": null,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": "red"
+  },
+  {
+   "class": "cube",
+   "conf": 0.8316144347190857,
+   "xy_robot_m": [
+    0.28348798526555863,
+    0.11726221387311477
+   ],
+   "yaw_deg": -3.681849241256714,
+   "fit_iou": null,
+   "eligible": true,
+   "skip_reason": null,
+   "colour": "yellow"
+  }
+ ],
+ "bins": {
+  "bin_1": {
+   "xy": [
+    0.29658933062407344,
+    -0.05373515438751969
+   ],
+   "yaw_deg": 89.39329065744896,
+   "found": true,
+   "holds": [
+    "cube"
+   ]
+  },
+  "bin_2": {
+   "xy": [
+    0.42860144913897114,
+    -0.19208798370581784
+   ],
+   "yaw_deg": 86.6027070394644,
+   "found": true,
+   "holds": [
+    "aaa_cell"
+   ]
+  },
+  "bin_3": {
+   "xy": [
+    0.46264019885778945,
+    -0.036697851483754276
+   ],
+   "yaw_deg": 86.69966630076763,
+   "found": true,
+   "holds": [
+    "screw"
+   ]
+  }
+ },
+ "skipped": [
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "bin",
+   "bin"
+  ],
+  [
+   "cap",
+   "distractor"
+  ],
+  [
+   "tube",
+   "distractor"
+  ]
+ ],
+ "tracker": {
+  "new": [],
+  "moved": [],
+  "vanished": [],
+  "order": [
+   "T1",
+   "T2",
+   "T3",
+   "T5"
+  ]
+ },
+ "decision": "pick",
+ "pick": {
+  "track": "T1",
+  "category": "aaa_cell",
+  "xy": [
+   0.4444732496002161,
+   0.13243199576656187
+  ],
+  "bin": "aaa_cell",
+  "attempt": 1
+ },
+ "route": {
+  "pick": "direct",
+  "place": "direct",
+  "failures": []
+ },
+ "rows": 106,
+ "moves": [
+  106,
+  25,
+  30,
+  81,
+  84
+ ],
+ "wrist_check": true,
+ "clear_pose": [
+  0.18,
+  -0.38,
+  0.35
+ ],
+ "seconds": 7.69
+}
